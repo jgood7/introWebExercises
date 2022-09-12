@@ -1,0 +1,25 @@
+
+<!--Create input field named name-input accepting text. Says 'Enter your name' when blank-->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<!--Create button named my-button that is captioned 'Click Me'-->
+<button id="my-button">Click Me</button>
+
+<!--Begin javascript-->
+<script>
+  //Create variable myButton using created html button
+  var myButton = document.querySelector('#my-button');
+  //Create input field nameInput using created input button
+  var nameInput = document.querySelector('#name-input');
+  //Calls function when myButton is clicked
+  myButton.addEventListener('click', function () {
+    //If there is a value in the nameInput box
+    if (nameInput.value !== '') {
+      //Output an alert within the browser captioned 'Hello' and the entered input
+      alert('Hello ' + nameInput.value);
+    //Close if statement
+    }
+  //Close function
+  });
+//End javascript
+</script>
+
